@@ -201,5 +201,23 @@ display: none;
     .course-card{
         flex-basis: 40%;
     }
+    .categories{
+        display: none;
+    }
+    .navbar__s2,.navbar__s3{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+  .sale-image {
+    position: relative; /* ensure image acts as positioning parent */
+  }
 
+  .sale-image__offer {
+    position: absolute; /* stays positioned within .sale-image */
+    top: 30%;           /* same vertical placement */
+    left: 5%;           /* same horizontal placement */
+    width: 35%;         /* keep same size */
+    transform: none;    /* prevent movement */
+  }
 }
